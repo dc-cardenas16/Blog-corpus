@@ -11,17 +11,22 @@ head(ID)
 ##Instalacion de ggplot para graficas ##
 install.packages("ggplot2")
 library(ggplot2)
+
 grafico1 <- ggplot(data=ID)+ geom_bar(mapping=aes(x=id))+ xlab("ID")
 grafico1 <- ggplot(ID) + geom_bar(stat="identity")
 grafico1 <- ggplot(ID) + geom_bar()
 grafico1 <- barplot(ID)
+
+##Instalacion fallida se necesita nueva version##
 install.packages("plotly")
+
 grafico2 <- ggplot(Datosblog, aes(x=topic,fill=as.factor(age))) + geom_bar() + coord_flip() + labs(title="Topics by age")
 grafico2
 
 grafico9 <- ggplot(Datosblog, aes(x=age,fill=topic)) + geom_bar() + labs(title="Topics by age")
 grafico9
 
+##cuantificacion datos de edad##
 AGE <- table(Datosblog$age)
 head(AGE)
 min(AGE)
@@ -29,14 +34,16 @@ max(AGE)
 
 barplot(AGE, col= "cyan3", main= "Dispercion de edades", cex.axis = 0.5, cex.main=1.5, font.main=2, font.axis=4,font.lab=4 , xlab = "Edad", ylab = "Cantidad")
 
+##Cuantificacion datos por tema##
 TOPIC <- table(Datosblog$topic)
 head(TOPIC)
 min(TOPIC)
 max(TOPIC)
 
 barplot(TOPIC)
-
+##Copia de seguridad##
 Copia.datos <- Datosblog
+
 mean(Datosblog$age)
 median(Datosblog$age)
 rangos <- split(Copia.datos, cut(Copia.datos$age, c(13, 20, 27, 34, 41, 48), include.lowest = TRUE ))
