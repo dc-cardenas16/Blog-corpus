@@ -11,22 +11,17 @@ head(ID)
 ##Instalacion de ggplot para graficas ##
 install.packages("ggplot2")
 library(ggplot2)
-
 grafico1 <- ggplot(data=ID)+ geom_bar(mapping=aes(x=id))+ xlab("ID")
 grafico1 <- ggplot(ID) + geom_bar(stat="identity")
 grafico1 <- ggplot(ID) + geom_bar()
 grafico1 <- barplot(ID)
-
-##Instalacion fallida se necesita nueva version##
 install.packages("plotly")
-
 grafico2 <- ggplot(Datosblog, aes(x=topic,fill=as.factor(age))) + geom_bar() + coord_flip() + labs(title="Topics by age")
 grafico2
 
 grafico9 <- ggplot(Datosblog, aes(x=age,fill=topic)) + geom_bar() + labs(title="Topics by age")
 grafico9
 
-##cuantificacion datos de edad##
 AGE <- table(Datosblog$age)
 head(AGE)
 min(AGE)
@@ -34,16 +29,14 @@ max(AGE)
 
 barplot(AGE, col= "cyan3", main= "Dispercion de edades", cex.axis = 0.5, cex.main=1.5, font.main=2, font.axis=4,font.lab=4 , xlab = "Edad", ylab = "Cantidad")
 
-##Cuantificacion datos por tema##
 TOPIC <- table(Datosblog$topic)
 head(TOPIC)
 min(TOPIC)
 max(TOPIC)
 
 barplot(TOPIC)
-##Copia de seguridad##
-Copia.datos <- Datosblog
 
+Copia.datos <- Datosblog
 mean(Datosblog$age)
 median(Datosblog$age)
 rangos <- split(Copia.datos, cut(Copia.datos$age, c(13, 20, 27, 34, 41, 48), include.lowest = TRUE ))
@@ -139,3 +132,15 @@ grafico22
 
 grafico23 <- ggplot(rangos$`[13,20]`, aes(x=topic,fill=gender)) + geom_bar() + labs(x=NULL, y="(13-20)", fill=NULL, title="Topics by gender") + theme(axis.line = element_blank(), axis.text= element_blank()) + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
 grafico23
+
+
+chisq.test(rangos$`[13,20]`)
+daos_chi <- table(Datosblog$age,Datosblog$topic)
+chisq.test(daos_chi)
+daos2_chi <- table(Datosblog$gender,Datosblog$topic)
+chisq.test(daos2_chi)
+daos3_chi <- table(Datosblog$gender,Datosblog$age)
+chisq.test(daos3_chi)
+
+summary(daos_chi)
+head(daos_chi)
