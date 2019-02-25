@@ -1,0 +1,60 @@
+      
+13-20
+
+ id             gender            age               topic                sign      
+ Min.   : 114645   female: 93536   Min.   :13.00   Student   :94976   Virgo      :19814  
+ 1st Qu.:1772041   male  :101632   1st Qu.:15.00   indUnk    :64521   Libra      :18378  
+ Median :3039699                   Median :16.00   Technology: 5411   Scorpio    :17362  
+ Mean   :2721131                   Mean   :15.76   Arts      : 5006   Taurus     :16986  
+ 3rd Qu.:3621989                   3rd Qu.:17.00   Non-Profit: 4989   Aquarius   :16377  
+ Max.   :4337133                   Max.   :17.00   Education : 4984   Sagittarius:16156  
+                                                   (Other)   :15281   (Other)    :90095  
+
+
+20-27
+
+       id             gender            age                         topic                sign 
+ Min.   :   5114   female:138614   Min.   :23.00   indUnk              :99026   Cancer     : 32416
+ 1st Qu.:1094221   male  :136894   1st Qu.:24.00   Student             :31277   Taurus     : 28721
+ Median :2299048                   Median :25.00   Technology          :22712   Libra      : 27730  
+ Mean   :2275021                   Mean   :24.78   Arts                :18292   Leo        : 24942 
+ 3rd Qu.:3481279                   3rd Qu.:26.00   Education           :13235   Aries      : 24325
+ Max.   :4336651                   Max.   :27.00   Communications-Media:11511   Sagittarius: 21922   
+                                                   (Other)             :79455   (Other)    :115452  
+
+   
+27-34
+  
+       id             gender           age               topic              sign      
+ Min.   :  15365   female:13540   Min.   :33.00   indUnk    :16325   Aries    : 6132  
+ 1st Qu.: 576311   male  :18646   1st Qu.:33.00   Education : 2742   Taurus   : 3951  
+ Median :1713442                  Median :34.00   Internet  : 2424   Capricorn: 3409  
+ Mean   :1978192                  Mean   :33.52   Publishing: 1654   Gemini   : 2955  
+ 3rd Qu.:3425530                  3rd Qu.:34.00   Arts      : 1416   Pisces   : 2541  
+ Max.   :4329651                  Max.   :34.00   Technology: 1366   Scorpio  : 2503  
+                                                  (Other)   : 6259   (Other)  :10695  
+
+
+34-41
+ 
+       id             gender           age                         topic            sign
+ Min.   :  17944   female:24037   Min.   :35.00   indUnk              :24017   Aries  : 7935
+ 1st Qu.: 831241   male  :30077   1st Qu.:35.00   Technology          : 6098   Virgo  : 6878 
+ Median :1915246                  Median :36.00   Arts                : 2903   Pisces : 6113 
+ Mean   :2138380                  Mean   :36.94   Fashion             : 2754   Scorpio: 5338 
+ 3rd Qu.:3438860                  3rd Qu.:38.00   Education           : 2486   Cancer : 4139 
+ Max.   :4331205                  Max.   :41.00   Communications-Media: 2282   Gemini : 3986   
+                                                  (Other)             :13574   (Other):19725 
+                     
+     
+41-47
+  
+       id             gender          age               topic               sign     
+ Min.   :   8173   female:9197   Min.   :42.00   indUnk    :7060   Pisces     :2339  
+ 1st Qu.: 778877   male  :8957   1st Qu.:43.00   Education :1778   Capricorn  :2254  
+ Median :2922061                 Median :45.00   Accounting:1060   Scorpio    :1893  
+ Mean   :2363194                 Mean   :45.03   Publishing: 863   Sagittarius:1763  
+ 3rd Qu.:3600987                 3rd Qu.:47.00   Technology: 758   Leo        :1675  
+ Max.   :4330516                 Max.   :48.00   Consulting: 757   Cancer     :1599  
+                                                 (Other)   :5878   (Other)    :6631  
+ 

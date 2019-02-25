@@ -1,0 +1,48 @@
+     Topics1 Entries1 Porcentage1
+1    Student    94976   48.66
+2     indUnk    64521   33.05
+3 Technology     5411    2.77
+4       Arts     5006    2.56
+5 Non-Profit     4989    2.55
+6  Education     4984    2.55
+7      Other    15281    7.82
+
+
+              Topics2 Entries2 Porcentage2
+1             Student    31277   11.35
+2              indUnk    99026   35.94
+3          Technology    22712    8.24
+4                Arts    18292    6.63
+5 Communication-Media    11511    4.17
+6           Education    13235    4.80
+7               Other    79455   28.83
+
+
+     Topics3 Entries3 Porcentage3
+1     indUnk    16325   50.72
+2 Technology     1366    4.24
+3       Arts     1416    4.39
+4   Internet     2424    7.53
+5 Publishing     1654    5.13
+6  Education     2742    8.51
+7      Other     6259   19.44
+
+
+              Topics4 Entries4 Porcentage4
+1              indUnk    24017   44.38
+2          Technology     6098   11.26
+3                Arts     2903    5.36
+4             Fashion     2754    5.08
+5 Communication-Media     2282    4.21
+6           Education     2486    4.59
+7               Other    13574   25.08
+
+
+     Topics5 Entries5 Porcentage5
+1     indUnk     7060   38.88
+2 Accounting     1060    5.83
+3 Technology      758    4.17
+4 Consulting      757    4.16
+5 Publishing      863    4.75
+6  Education     1778    9.79
+7      Other     5878   32.37
