@@ -18,16 +18,24 @@ grafico1 <- barplot(ID)
 install.packages("plotly")
 grafico2 <- ggplot(Datosblog, aes(x=topic,fill=as.factor(age))) + geom_bar() + coord_flip() + labs(title="Topics by age")
 grafico2
+
+grafico9 <- ggplot(Datosblog, aes(x=age,fill=topic)) + geom_bar() + labs(title="Topics by age")
+grafico9
+
 AGE <- table(Datosblog$age)
 head(AGE)
 min(AGE)
 max(AGE)
-grafico3 <- barplot(AGE)
+
+barplot(AGE, col= "cyan3", main= "Dispercion de edades", cex.axis = 0.5, cex.main=1.5, font.main=2, font.axis=4,font.lab=4 , xlab = "Edad", ylab = "Cantidad")
+
 TOPIC <- table(Datosblog$topic)
 head(TOPIC)
 min(TOPIC)
 max(TOPIC)
-grafico4 <- barplot(TOPIC)
+
+barplot(TOPIC)
+
 Copia.datos <- Datosblog
 mean(Datosblog$age)
 median(Datosblog$age)
@@ -90,7 +98,7 @@ Rango41_48
 grafico4 <- ggplot(rangos$`[13,20]`, aes(x="",fill=topic)) + geom_bar() + labs(x=NULL, y="(13-20)", fill=NULL, title="Topics by age-range") + theme(axis.line = element_blank(), axis.text= element_blank()) + coord_polar("y") + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
 grafico4
 
-grafico5 <-pie(Entries3, labels=Porcentage3, main="Temas para rango de edad 13-20", col=c("cadetblue3","chartreuse3","chocolate2","coral2","cyan3","darkgoldenrod2","firebrick3")) 
+pie(Entries3, labels=Porcentage3, main="Temas para rango de edad 13-20", col=c("cadetblue3","chartreuse3","chocolate2","coral2","cyan3","darkgoldenrod2","firebrick3")) 
 
 grafico5 <- ggplot(rangos$`(20,27]`, aes(x="",fill=topic)) + geom_bar() + labs(x=NULL, y="(20-27)", fill=NULL, title="Topics by age-range") + theme(axis.line = element_blank(), axis.text= element_blank()) + coord_polar("y") + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
 grafico5
@@ -103,3 +111,24 @@ grafico7
 
 grafico8 <- ggplot(rangos$`(41,48]`, aes(x="",fill=topic)) + geom_bar() + labs(x=NULL, y="(41-48)", fill=NULL, title="Topics by age-range") + theme(axis.line = element_blank(), axis.text= element_blank()) + coord_polar("y") + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
 grafico8
+
+sink("output2.txt")
+print(Rango13_20)
+print(Rango20_27)
+print(Rango27_34)
+print(Rango34_41)
+print(Rango41_48)
+sink()
+
+
+grafico10 <- ggplot(Datosblog, aes(x=topic,fill=gender)) + geom_bar() + labs(title="Topics by gender") + coord_flip()
+grafico10
+
+grafico11 <- ggplot(Datosblog, aes(x=as.factor(age),fill=gender)) + geom_bar() + labs(title="Age and gender") 
+grafico11
+
+grafico22 <- ggplot(rangos$`(27,34]`, aes(x=topic,fill=gender)) + geom_bar() + labs(x=NULL, y="(13-20)", fill=NULL, title="Topics by gender") + theme(axis.line = element_blank(), axis.text= element_blank()) + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
+grafico22
+
+grafico23 <- ggplot(rangos$`[13,20]`, aes(x=topic,fill=gender)) + geom_bar() + labs(x=NULL, y="(13-20)", fill=NULL, title="Topics by gender") + theme(axis.line = element_blank(), axis.text= element_blank()) + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
+grafico23
