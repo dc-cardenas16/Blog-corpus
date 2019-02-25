@@ -120,7 +120,7 @@ print(Rango34_41)
 print(Rango41_48)
 sink()
 
-
+## graficos de relacion genero edad y genero tema ##
 grafico10 <- ggplot(Datosblog, aes(x=topic,fill=gender)) + geom_bar() + labs(title="Topics by gender") + coord_flip()
 grafico10
 
@@ -133,7 +133,7 @@ grafico22
 grafico23 <- ggplot(rangos$`[13,20]`, aes(x=topic,fill=gender)) + geom_bar() + labs(x=NULL, y="(13-20)", fill=NULL, title="Topics by gender") + theme(axis.line = element_blank(), axis.text= element_blank()) + theme(axis.line = element_blank(), axis.text= element_blank(), axis.ticks= element_blank())
 grafico23
 
-
+## datos estadisticos de dependencia entre variables ##
 chisq.test(rangos$`[13,20]`)
 daos_chi <- table(Datosblog$age,Datosblog$topic)
 chisq.test(daos_chi)
